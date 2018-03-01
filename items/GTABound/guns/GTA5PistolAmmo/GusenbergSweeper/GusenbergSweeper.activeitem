@@ -7,7 +7,7 @@
 	"description" : "",
 	"shortdescription" : "Gusenberg Sweeper",
 	"tooltipKind" : "base",
-	"twoHanded" : false,
+	"twoHanded" : true,
 	
 	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5PistolAmmo/GusenbergSweeper/icon.png",
 	
