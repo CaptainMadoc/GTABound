@@ -19,29 +19,29 @@
 		"tracks" : {
 			"shoot" : [
 				{
-					"value" : {"gun_rotation" : 0, "lever1_x" : 0, "offset_x" : -0.25, "lever2_x" : -0.750},
-					"step" : 2,
+					"value" : {"gun_rotation" : 0, "lever1_x" : 0, "offset_x" : -0.25, "lever2_x" : -0.25},
+					"step" : 5,
 					"sound" : {}
 				},
 				{
-					"value" : {"gun_rotation" : 0, "lever1_x" : -0.25, "offset_x" : 0, "lever2_x" : -0.250},
+					"value" : {"gun_rotation" : 0, "lever1_x" : -0.25, "offset_x" : 0, "lever2_x" : 0},
 					"step" : 6,
 					"sound" : {}
 				},
 				{
-					"value" : {"lever1_x" : 0, "bullet_y": 0.125, "lever2_x" : 0},
+					"value" : {"lever1_x" : 0, "bullet_y": 0.125},
 					"step" : 6,
 					"sound" : {}
 				}
 			],
 			"reload" : [
 				{
-					"value" : {"lever2_x" : -0.25, "mag_y" : 0, "lever1_x" : -0.25},
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25},	//REPLACE MAG
 					"step" : 10,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : -0.25, "armangle" : -5},
+					"value" : {"mag_y" : -0.25, "armangle" : -5, "armback_x": 0.5, "armback_y": -0.125},
 					"step" : 1,
 					"sound" : {}
 				},
@@ -51,32 +51,32 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0.125, "mag_x" : -1.5},
+					"value" : {"mag_y" : 0.125, "mag_x" : -1.5, "armback_x": -0.75},
 					"step" : 10,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" :  -0.5, "mag_x" : 0},
+					"value" : {"mag_y" :  -0.5, "mag_x" : 0, "armback_x": 0.5},
 					"step" : 10,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armangle" : 10},
+					"value" : {"mag_y" : 0, "armangle" : 10, "armback_y": 0},
 					"step" : 10,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "armangle" : 0},
+					"value" : {"mag_y" : 0, "armangle" : 0},	//REPLACE MAG END
 					"step" : 5,
 					"sound" : {}
 				},
 				{
-					"value" : {},
+					"value" : {},	//COCK
 					"step" : 5,
 					"sound" : {}
 				},
 				{
-					"value" : {},
+					"value" : {"armback_x" : 0.75, "armback_y" : 0.25, "armback_rotation" : 15},
 					"step" : 5,
 					"sound" : {}
 				},
@@ -86,17 +86,17 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "lever2_x" : -0.25, "gun_x" : -1.25},
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "lever2_x" : -0.25, "gun_x" : -1.25, "armback_x" : 0.25},
 					"step" : 4,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : 0, "lever2_x" : 0, "gun_x" : -1.25, "gun_rotation" : 0, "armangle" : 0, "bullet_y": 0.125},
+					"value" : {"mag_y" : 0, "lever1_x" : 0, "lever2_x" : 0, "gun_x" : -1.25, "gun_rotation" : 0, "gun_y" : -0.75, "armangle" : 0, "armback_x" : 0.75, "bullet_y": 0.125},
 					"step" : 6,
 					"sound" : {}
 				},
 				{
-					"value" : {},
+					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},	//COCK END
 					"step" : 5,
 					"sound" : {}
 				}
@@ -108,27 +108,27 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"bullet_y": 0.125},
+					"value" : {"armback_x" : 0.75, "armback_y" : 0.25, "armback_rotation" : 15, "bullet_y": 0.125},
 					"step" : 5,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "gun_rotation" : 15, "armangle" : -5},
+					"value" : {"mag_y" : 0, "gun_rotation" : 15, "gun_y" : -0.75, "armback_y" : 0.25, "armangle" : -5},
 					"step" : 6,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "lever2_x" : -0.25, "gun_x" : -1.25},
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "lever2_x" : -0.25, "gun_x" : -1.25, "armback_x" : 0.25},
 					"step" : 4,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : 0, "lever2_x" : -0.625, "gun_x" : -1.25, "gun_rotation" : 0, "armangle" : 0},
+					"value" : {"mag_y" : 0, "lever1_x" : 0, "lever2_x" : -0.625, "gun_x" : -1.25, "gun_rotation" : 0, "gun_y" : -0.75, "armangle" : 0, "armback_x" : 0, "armback_y" : 0.5},
 					"step" : 6,
 					"sound" : {}
 				},
 				{
-					"value" : {"lever2_x" : 0},
+					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "lever2_x" : 0, "armback_rotation" : 5},
 					"step" : 5,
 					"sound" : {}
 				}
@@ -170,6 +170,12 @@
 			"lever2_y" : 0, 
 			"lever2_rotation" : 0,
 			
+			"armback_x" : 0.625,
+			"armback_y" : 0,
+			"armback_xRot" : -0.75,
+			"armback_yRot" : 0.125,
+			"armback_rotation" : 5,
+			
 			"armfront_x" : 0,
 			"armfront_y" : 0,
 			"armfront_xRot" : -1.25,
@@ -179,29 +185,29 @@
 	
 	//The higher, The more harder to control
 	"gunConfig" : {	
-		"inaccuracy" 		: 4, //Your random number generator
+		"inaccuracy" 		: 0, //Your random number generator
 		
 		//ammo bullet
 		"compatibleAmmo" 	: [ "GTA5PistolAmmo" ],
-		"projectileConfig" 	: {"speed" : 125, "power" : 5},
-		"projectileType" 	: "bullet-2",
+		"projectileConfig" 	: {"speed" : 75, "power" : 5},
+		"projectileType" 	: "GTA5PistolBullet",
 		
 		//visual sfx
 		"muzzleEffect" 		: true,
 		"smokeEffect" 		: true,
 		"shellEffect" 		: true,
-		"fireOffset" 		: [1.125, 0.75],			//the projectile pos
+		"fireOffset" 		: [1.7, 0.57],			//the projectile pos
 		"shellOffset" 		: [0.625, 0.375], 		//the falling shell init pos
 		"gunSounds" 		: ["fire"], 		//Sounds from .animation
 		"magToHideTransform": "hidemag",	//For mags attachments
 		
 		//mechanics
-		"fireSpeed" 		: 0.07,			//atataatatatatata
-		"fireMode" 			: "Auto", 		//auto, burst, semi
+		"fireSpeed" 		: 0.11,			//atataatatatatata
+		"fireMode" 			: "auto", 		//auto, burst, semi
 		"burstAmount" 		: 5,
 		"burstCooldown" 	: 0.8,
-		"recoilPower" 		: 12,			//The higher, The more harder to control
-		"recoilRecovery" 	: 8, 		//Higher the slower
+		"recoilPower" 		: 1,			//The higher, The more harder to control
+		"recoilRecovery" 	: 1, 		//Higher the slower
 		"magazineMax" 		: 16,
 		"magazineCurrent"	: 0,
 		"reloadCooldown" 	: 2,

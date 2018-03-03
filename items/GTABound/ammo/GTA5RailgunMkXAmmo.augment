@@ -1,0 +1,18 @@
+{
+	"itemName" : "GTA5RailgunMkXAmmo",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/GTABound/sprite/shells/GTA5RailgunMkXAmmo.png",
+	"description" : "",
+	"shortdescription" : "Railgun Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "GTA5RailgunMkXAmmo", "GTA5RailgunMkXAmmo" ],
+		"projectileConfig" 	: {"speed" : 70, "power" : 7},
+		"projectileType" 	: "bullet-2"
+	},
+	
+	"scripts" : [ "GTA5ammo.lua" ]
+}

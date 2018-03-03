@@ -14,5 +14,5 @@
 		"projectileType" 	: "bullet-2"
 	},
 	
-	"scripts" : [ "ammo.lua" ]
+	"scripts" : [ "GTA5ammo.lua" ]
 }

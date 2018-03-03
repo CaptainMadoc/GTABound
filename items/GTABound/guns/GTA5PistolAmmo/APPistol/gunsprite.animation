@@ -43,7 +43,7 @@
 				"properties" : {
 					"zLevel" : 0,
 					"centered" : false,
-					"offset" : [-4.125, -2.375],
+					"offset" : [-4.375, -2.2],
 					"transformationGroups" : ["armback", "offset"],
 					"image" : "/humanoid/<species>/backarm.png:<armbackframe><armbackdirectives>"
 				}
@@ -53,7 +53,7 @@
 				"properties" : {
 					"zLevel" : 1,
 					"centered" : false,
-					"offset" : [-4.125, -2.375],
+					"offset" : [-4.375, -2.2],
 					"transformationGroups" : ["armback", "offset"],
 					"image" : "<armbackarmor>"
 				}
@@ -63,7 +63,7 @@
 				"properties" : {
 					"zLevel" : 9,
 					"centered" : false,
-					"offset" : [-3.750, -2.375],
+					"offset" : [-3.6, -2.2],
 					"transformationGroups" : ["armfront", "offset"],
 					"image" : "/humanoid/<species>/frontarm.png:<armfrontframe><armfrontdirectives>"
 				}
@@ -73,7 +73,7 @@
 				"properties" : {
 					"zLevel" : 10,
 					"centered" : false,
-					"offset" : [-3.750, -2.375],
+					"offset" : [-3.6, -2.2],
 					"transformationGroups" : ["armfront", "offset"],
 					"image" : "<armfrontarmor>"
 				}
@@ -84,7 +84,7 @@
 				"properties" : {
 					"zLevel" : 16,
 					"transformationGroups" : ["muzzle", "gun", "offset"],
-					"offset" : [1.125, -0.500],
+					"offset" : [1.25, -0.25],
 					"fullbright" : true,
 					"centered" : false
 				},
@@ -105,7 +105,7 @@
 				"properties" : {
 					"zLevel" : 6,
 					"centered" : false,
-					"offset" : [0.625, 0.375],
+					"offset" : [0.8, 0.3],
 					"transformationGroups" : ["gun", "offset"],
 					"image" : "/items/GTABound/sprite/guns/<bullettype>/<gunmodel>/gun.png"
 				}
@@ -115,7 +115,7 @@
 				"properties" : {
 					"zLevel" : 2,
 					"centered" : false,
-					"offset" : [0.625, 0.375],
+					"offset" : [0.8, 0.3],
 					"transformationGroups" : ["gunbg", "gun", "offset"],
 					"image" : "/items/GTABound/sprite/guns/<bullettype>/<gunmodel>/gunbg.png"
 				}
@@ -125,7 +125,7 @@
 				"properties" : {
 					"zLevel" : 4,
 					"centered" : false,
-					"offset" : [0.625, 0.375],
+					"offset" : [0.8, 0.3],
 					"transformationGroups" : ["hidemag", "mag", "gun", "offset"],
 					"image" : "/items/GTABound/sprite/guns/<bullettype>/<gunmodel>/mag.png"
 				}
@@ -135,7 +135,7 @@
 				"properties" : {
 					"zLevel" : 3,
 					"centered" : false,
-					"offset" : [0.625, 0.250],
+					"offset" : [0.8, 0],
 					"transformationGroups" : ["bullet", "mag", "gun", "offset"],
 					"image" : "/items/GTABound/sprite/guns/<bullettype>/<gunmodel>/bullet.png"
 				}
@@ -145,7 +145,7 @@
 				"properties" : {
 					"zLevel" : 5,
 					"centered" : false,
-					"offset" : [0.625, 0.375],
+					"offset" : [0.8, 0.3],
 					"transformationGroups" : ["lever1", "gun", "offset"],
 					"image" : "/items/GTABound/sprite/guns/<bullettype>/<gunmodel>/lever1.png"
 				}
@@ -155,7 +155,7 @@
 				"properties" : {
 					"zLevel" : 7,
 					"centered" : false,
-					"offset" : [0.625, 0.375],
+					"offset" : [0.8, 0.3],
 					"transformationGroups" : ["lever2", "gun", "offset"],
 					"image" : "/items/GTABound/sprite/guns/<bullettype>/<gunmodel>/lever2.png"
 				}
@@ -167,7 +167,7 @@
 				"properties" : {
 					"zLevel" : 7,
 					"centered" : false,
-					"offset" : [1.375, 1.375],
+					"offset" : [1.5, 1.125],
 					"transformationGroups" : ["a_sight", "gun", "offset"],
 					"image" : "<a_sight>"
 				}
@@ -177,7 +177,7 @@
 				"properties" : {
 					"zLevel" : 4,
 					"centered" : false,
-					"offset" : [-0.125, 0.375], //must be at the tip of the default mag
+					"offset" : [-0.625, 0.125], //must be at the tip of the default mag
 					"transformationGroups" : ["a_mag", "mag", "gun", "offset"],
 					"image" : "<a_mag>"
 				}
@@ -187,7 +187,7 @@
 				"properties" : {
 					"zLevel" : 7,
 					"centered" : false,
-					"offset" : [-0.125, 0.375], //must be at the tip of the default mag
+					"offset" : [-0.625, 0.125], //must be at the tip of the default mag
 					"transformationGroups" : ["a_muzzle", "gun", "offset"],
 					"image" : "<a_muzzle>"
 				}
@@ -223,16 +223,16 @@
 						"finalVelocity" : [-2, 50],
 						"angularVelocity" : 720,
 						"color" : [255, 255, 255, 255],
-						"size" : 0.30,
+						"size" : 1,
 						"destructionTime" : 0.075,
-						"image" : "/items/GTABound/sprite/shells/empty9mmParabellum.png", //shells here
+						"image" : "/items/GTABound/sprite/shells/EmptyGTA5PistolAmmo.png", //shells here
 						"destructionAction" : "fade",
 						"collidesForeground" : true,
 						"timeToLive" : 1,
 						"type" : "textured",
 						"layer" : "front",
 						"flippable" : true,
-						"initialVelocity" : [-19, 16],
+						"initialVelocity" : [-10, 16],
 						"approach" : [0, -100],
 						"position" : [0, 0],
 						"fullbright" : false
@@ -261,7 +261,7 @@
 						"angularVelocity" : 360,
 						"initialVelocity" : [0, 1],
 						"approach" : [0, -1],
-						"position" : [0, -0.5],
+						"position" : [0.25, -0.25],
 						"fullbright" : false
 					}
 				}

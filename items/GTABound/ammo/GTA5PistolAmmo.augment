@@ -10,8 +10,9 @@
 	
 	"gunConfig" : {	
 		"compatibleAmmo" 	: [ "GTA5PistolAmmo", "GTA5PistolAmmo" ],
+		"projectileConfig" 	: {"speed" : 70, "power" : 7},
 		"projectileType" 	: "bullet-2"
 	},
 	
-	"scripts" : [ "ammo.lua" ]
+	"scripts" : [ "GTA5ammo.lua" ]
 }

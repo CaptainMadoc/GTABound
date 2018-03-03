@@ -109,7 +109,7 @@ function init()
 	
 	if self.gunConfig.returnAmmo and type(self.gunConfig.returnAmmo)=="table" then
 		for k,v in pairs(self.gunConfig.returnAmmo) do
-			activeItem.giveOwnerItem({name = k, count = v})
+			player.giveItem({name = k, count = v})
 			self.gunConfig.returnAmmo[v] = nil
 		end
 		self.gunConfig.returnAmmo = nil

@@ -1,0 +1,29 @@
+{
+  "kind" : "GTA5RailgunFlechetteTrailEffectSource",
+  "definition" : {
+    "duration" : 0.00003,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    },
+    "particles" : [
+      [ "GTA5RailgunFlechetteTrailParticle" ]
+    ],
+    "sounds" : [
+      [ ]
+    ],
+    "stop" : {
+      "particles" : [
+        [  ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    }
+  }
+}

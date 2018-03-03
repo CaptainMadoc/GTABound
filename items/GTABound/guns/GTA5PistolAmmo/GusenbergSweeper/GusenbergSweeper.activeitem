@@ -24,7 +24,7 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"gun_rotation" : 0, "lever1_x" : -0.25, "offset_x" : 0, "lever2_x" : 0},
+					"value" : {"gun_rotation" : 0, "lever1_x" : -0.375, "offset_x" : 0, "lever2_x" : 0},
 					"step" : 6,
 					"sound" : {}
 				},
@@ -36,7 +36,7 @@
 			],
 			"reload" : [
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : -0.25},	//REPLACE MAG
+					"value" : {"mag_y" : 0, "lever1_x" : -0.375},	//REPLACE MAG
 					"step" : 10,
 					"sound" : {}
 				},
@@ -185,29 +185,29 @@
 	
 	//The higher, The more harder to control
 	"gunConfig" : {	
-		"inaccuracy" 		: 5, //Your random number generator
+		"inaccuracy" 		: 0, //Your random number generator
 		
 		//ammo bullet
 		"compatibleAmmo" 	: [ "GTA5PistolAmmo" ],
-		"projectileConfig" 	: {"speed" : 125, "power" : 5},
-		"projectileType" 	: "bullet-2",
+		"projectileConfig" 	: {"speed" : 90, "power" : 5},
+		"projectileType" 	: "GTA5PistolBullet",
 		
 		//visual sfx
 		"muzzleEffect" 		: true,
 		"smokeEffect" 		: true,
 		"shellEffect" 		: true,
-		"fireOffset" 		: [2, 0.875],			//the projectile pos
-		"shellOffset" 		: [0.625, 0.375], 		//the falling shell init pos
+		"fireOffset" 		: [3, 0.7],			//the projectile pos
+		"shellOffset" 		: [0.95, 0.4], 		//the falling shell init pos
 		"gunSounds" 		: ["fire"], 		//Sounds from .animation
 		"magToHideTransform": "hidemag",	//For mags attachments
 		
 		//mechanics
-		"fireSpeed" 		: 0.07,			//atataatatatatata
+		"fireSpeed" 		: 0.09,			//atataatatatatata
 		"fireMode" 			: "auto", 		//auto, burst, semi
 		"burstAmount" 		: 5,
 		"burstCooldown" 	: 0.8,
-		"recoilPower" 		: 12,			//The higher, The more harder to control
-		"recoilRecovery" 	: 8, 		//Higher the slower
+		"recoilPower" 		: 1,			//The higher, The more harder to control
+		"recoilRecovery" 	: 1, 		//Higher the slower
 		"magazineMax" 		: 30,
 		"magazineCurrent"	: 0,
 		"reloadCooldown" 	: 2,
