@@ -1,15 +1,15 @@
 {
-	"itemName" : "Railgun",
+	"itemName" : "MiniSMG",
 	"price" : 0,
 	"maxStack" : 1,
 	"rarity" : "common",
-	"category" : "Railgun",
+	"category" : "Submachine Gun",
 	"description" : "",
-	"shortdescription" : "Railgun",
+	"shortdescription" : "Mini SMG",
 	"tooltipKind" : "base",
 	"twoHanded" : true,
 	
-	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5RailgunAmmo/Railgun/icon.png",
+	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5PistolAmmo/MiniSMG/icon.png",
 	
 	"animation" : "gunsprite.animation",
 	"animationParts" : { },
@@ -19,28 +19,13 @@
 		"tracks" : {
 			"shoot" : [
 				{
-					"value" : {"gun_x" : -1.3, "gun_rotation" : 1, "lever1_x" : 0, "offset_x" : -0.25, "lever2_x" : -0.625},
+					"value" : {"gun_rotation" : 0, "lever1_x" : 0, "offset_x" : -0.25, "lever2_x" : -0.625},
 					"step" : 2,
 					"sound" : {}
 				},
 				{
-					"value" : {"gun_x" : -1.35, "gun_rotation" : 3, "lever1_x" : 0, "offset_x" : -0.25, "lever2_x" : -0.625},
-					"step" : 10,
-					"sound" : {}
-				},
-				{
-					"value" : {"gun_x" : -1.35, "gun_rotation" : 2, "lever1_x" : 0, "offset_x" : -0.2, "lever2_x" : -0.625},
-					"step" : 10,
-					"sound" : {}
-				},
-				{
-					"value" : {"gun_x" : -1.3, "gun_rotation" : 1, "lever1_x" : 0, "offset_x" : -0.1, "lever2_x" : -0.625},
-					"step" : 10,
-					"sound" : {}
-				},
-				{
-					"value" : {"gun_x" : -1.25, "gun_rotation" : 0, "lever1_x" : -0.375, "offset_x" : 0, "lever2_x" : 0},
-					"step" : 10,
+					"value" : {"gun_rotation" : 0, "lever1_x" : -0.375, "offset_x" : 0, "lever2_x" : 0},
+					"step" : 6,
 					"sound" : {}
 				},
 				{
@@ -108,31 +93,6 @@
 				{
 					"value" : {"mag_y" : 0, "lever1_x" : 0, "lever2_x" : 0, "gun_x" : -1.25, "gun_rotation" : 0, "gun_y" : -0.75, "armangle" : 0, "armback_x" : 0.75, "bullet_y": 0.125},
 					"step" : 6,
-					"sound" : {}
-				},
-				{
-					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},	//COCK END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},	//COCK END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},	//COCK END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},	//COCK END
-					"step" : 5,
-					"sound" : {}
-				},
-				{
-					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},	//COCK END
-					"step" : 5,
 					"sound" : {}
 				},
 				{
@@ -228,27 +188,27 @@
 		"inaccuracy" 		: 0, //Your random number generator
 		
 		//ammo bullet
-		"compatibleAmmo" 	: [ "GTA5RailgunAmmo" ],
-		"projectileConfig" 	: {"speed" : 120, "power" : 40},
-		"projectileType" 	: "GTA5RailgunFlechette",
+		"compatibleAmmo" 	: [ "GTA5PistolAmmo" ],
+		"projectileConfig" 	: {"speed" : 60, "power" : 7},
+		"projectileType" 	: "GTA5PistolBullet",
 		
 		//visual sfx
 		"muzzleEffect" 		: true,
-		"smokeEffect" 		: false,
+		"smokeEffect" 		: true,
 		"shellEffect" 		: true,
-		"fireOffset" 		: [2.6, 0.55],			//the projectile pos
-		"shellOffset" 		: [0.95, 0.4], 		//the falling shell init pos
+		"fireOffset" 		: [1.7, 0.55],			//the projectile pos
+		"shellOffset" 		: [1.1, 0.55], 		//the falling shell init pos
 		"gunSounds" 		: ["fire"], 		//Sounds from .animation
 		"magToHideTransform": "hidemag",	//For mags attachments
 		
 		//mechanics
-		"fireSpeed" 		: 1.3,			//atataatatatatata
+		"fireSpeed" 		: 0.09,			//atataatatatatata
 		"fireMode" 			: "auto", 		//auto, burst, semi
 		"burstAmount" 		: 5,
 		"burstCooldown" 	: 0.8,
 		"recoilPower" 		: 1,			//The higher, The more harder to control
 		"recoilRecovery" 	: 1, 		//Higher the slower
-		"magazineMax" 		: 3,
+		"magazineMax" 		: 10,
 		"magazineCurrent"	: 0,
 		"reloadCooldown" 	: 2,
 		
