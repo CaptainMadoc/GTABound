@@ -1,15 +1,15 @@
 {
-	"itemName" : "CompactRifle",
+	"itemName" : "GTA5MG",
 	"price" : 0,
 	"maxStack" : 1,
 	"rarity" : "common",
-	"category" : "Assault Rifle",
+	"category" : "Light Machine Gun",
 	"description" : "",
-	"shortdescription" : "Compact Rifle",
+	"shortdescription" : "MG",
 	"tooltipKind" : "base",
 	"twoHanded" : true,
 	
-	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5RifleAmmo/CompactRifle/icon.png",
+	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5RifleAmmo/GTA5MG/icon.png",
 	
 	"animation" : "gunsprite.animation",
 	"animationParts" : { },
@@ -19,22 +19,37 @@
 		"tracks" : {
 			"shoot" : [
 				{
-					"value" : {"gun_rotation" : 0, "lever1_x" : 0, "offset_x" : -0.25, "lever2_x" : -0.625},
+					"value" : {"gun_rotation" : 0, "lever1_x" : 0, "offset_x" : -0.25},
 					"step" : 2,
 					"sound" : {}
 				},
 				{
-					"value" : {"gun_rotation" : 0, "lever1_x" : -0.375, "offset_x" : 0, "lever2_x" : 0},
+					"value" : {"gun_rotation" : 0, "lever1_x" : -0.375, "offset_x" : 0},
 					"step" : 6,
 					"sound" : {}
 				},
 				{
-					"value" : {"lever1_x" : 0, "bullet_y": 0.125},
+					"value" : {"lever1_x" : 0},
 					"step" : 6,
 					"sound" : {}
 				}
 			],
 			"reload" : [
+				{
+					"value" : {"lever2_rotation" : -20},	//REPLACE MAG
+					"step" : 10,
+					"sound" : {}
+				},
+				{
+					"value" : {"lever2_rotation" : -60},	//REPLACE MAG
+					"step" : 10,
+					"sound" : {}
+				},
+				{
+					"value" : {"lever2_rotation" : -80},	//REPLACE MAG
+					"step" : 10,
+					"sound" : {}
+				},
 				{
 					"value" : {"mag_y" : 0, "lever1_x" : -0.375},	//REPLACE MAG
 					"step" : 10,
@@ -71,6 +86,26 @@
 					"sound" : {}
 				},
 				{
+					"value" : {"lever2_rotation" : -70},	//REPLACE MAG
+					"step" : 2,
+					"sound" : {}
+				},
+				{
+					"value" : {"lever2_rotation" : -60},	//REPLACE MAG
+					"step" : 2,
+					"sound" : {}
+				},
+				{
+					"value" : {"lever2_rotation" : -30},	//REPLACE MAG
+					"step" : 2,
+					"sound" : {}
+				},
+				{
+					"value" : {"lever2_rotation" : 0},	//REPLACE MAG
+					"step" : 2,
+					"sound" : {}
+				},
+				{
 					"value" : {},	//COCK
 					"step" : 5,
 					"sound" : {}
@@ -86,12 +121,12 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "lever2_x" : -0.25, "gun_x" : -1.25, "armback_x" : 0.25},
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "gun_x" : -1.25, "armback_x" : 0.25},
 					"step" : 4,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : 0, "lever2_x" : 0, "gun_x" : -1.25, "gun_rotation" : 0, "gun_y" : -0.75, "armangle" : 0, "armback_x" : 0.75, "bullet_y": 0.125},
+					"value" : {"mag_y" : 0, "lever1_x" : 0, "gun_x" : -1.25, "gun_rotation" : 0, "gun_y" : -0.75, "armangle" : 0, "armback_x" : 0.75, "bullet_y": 0.125},
 					"step" : 6,
 					"sound" : {}
 				},
@@ -118,17 +153,17 @@
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "lever2_x" : -0.25, "gun_x" : -1.25, "armback_x" : 0.25},
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "gun_x" : -1.25, "armback_x" : 0.25},
 					"step" : 4,
 					"sound" : {}
 				},
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : 0, "lever2_x" : -0.625, "gun_x" : -1.25, "gun_rotation" : 0, "gun_y" : -0.75, "armangle" : 0, "armback_x" : 0, "armback_y" : 0.5},
+					"value" : {"mag_y" : 0, "lever1_x" : 0, "gun_x" : -1.25, "gun_rotation" : 0, "gun_y" : -0.75, "armangle" : 0, "armback_x" : 0, "armback_y" : 0.5},
 					"step" : 6,
 					"sound" : {}
 				},
 				{
-					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "lever2_x" : 0, "armback_rotation" : 5},
+					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},
 					"step" : 5,
 					"sound" : {}
 				}
@@ -166,8 +201,8 @@
 			"lever1_y" : 0, 
 			"lever1_rotation" : 0,
 			
-			"lever2_x" : 0, 
-			"lever2_y" : 0, 
+			"lever2_x" : 2.5, 
+			"lever2_y" : 1.25, 
 			"lever2_rotation" : 0,
 			
 			"armback_x" : 0.625,
@@ -196,19 +231,19 @@
 		"muzzleEffect" 		: true,
 		"smokeEffect" 		: true,
 		"shellEffect" 		: true,
-		"fireOffset" 		: [2.25, 0.45],			//the projectile pos
+		"fireOffset" 		: [3.95, 0.55],			//the projectile pos
 		"shellOffset" 		: [1.1, 0.3], 		//the falling shell init pos
 		"gunSounds" 		: ["fire"], 		//Sounds from .animation
 		"magToHideTransform": "hidemag",	//For mags attachments
 		
 		//mechanics
-		"fireSpeed" 		: 0.07,			//atataatatatatata
+		"fireSpeed" 		: 0.13,			//atataatatatatata
 		"fireMode" 			: "auto", 		//auto, burst, semi
 		"burstAmount" 		: 5,
 		"burstCooldown" 	: 0.8,
 		"recoilPower" 		: 1,			//The higher, The more harder to control
 		"recoilRecovery" 	: 1, 		//Higher the slower
-		"magazineMax" 		: 30,
+		"magazineMax" 		: 54,
 		"magazineCurrent"	: 0,
 		"reloadCooldown" 	: 2,
 		

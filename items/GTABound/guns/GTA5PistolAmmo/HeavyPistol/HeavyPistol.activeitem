@@ -1,15 +1,15 @@
 {
-	"itemName" : "CompactRifle",
+	"itemName" : "HeavyPistol",
 	"price" : 0,
 	"maxStack" : 1,
 	"rarity" : "common",
-	"category" : "Assault Rifle",
+	"category" : "Pistol",
 	"description" : "",
-	"shortdescription" : "Compact Rifle",
+	"shortdescription" : "Heavy Pistol",
 	"tooltipKind" : "base",
 	"twoHanded" : true,
 	
-	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5RifleAmmo/CompactRifle/icon.png",
+	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5PistolAmmo/HeavyPistol/icon.png",
 	
 	"animation" : "gunsprite.animation",
 	"animationParts" : { },
@@ -19,24 +19,34 @@
 		"tracks" : {
 			"shoot" : [
 				{
-					"value" : {"gun_rotation" : 0, "lever1_x" : 0, "offset_x" : -0.25, "lever2_x" : -0.625},
-					"step" : 2,
+					"value" : {"gun_rotation" : 10, "lever1_x" : 0, "offset_x" : -0.25, "lever2_x" : -0.25},
+					"step" : 5,
 					"sound" : {}
 				},
 				{
-					"value" : {"gun_rotation" : 0, "lever1_x" : -0.375, "offset_x" : 0, "lever2_x" : 0},
+					"value" : {"gun_rotation" : 7, "lever1_x" : 0, "offset_x" : -0.25, "lever2_x" : -0.25},
+					"step" : 5,
+					"sound" : {}
+				},
+				{
+					"value" : {"gun_rotation" : 5, "lever1_x" : -0.25, "offset_x" : 0, "lever2_x" : 0},
 					"step" : 6,
 					"sound" : {}
 				},
 				{
-					"value" : {"lever1_x" : 0, "bullet_y": 0.125},
+					"value" : {"gun_rotation" : 2, "lever1_x" : -0.25, "offset_x" : 0, "lever2_x" : 0},
+					"step" : 6,
+					"sound" : {}
+				},
+				{
+					"value" : {"gun_rotation" : 0, "lever1_x" : 0, "bullet_y": 0.125},
 					"step" : 6,
 					"sound" : {}
 				}
 			],
 			"reload" : [
 				{
-					"value" : {"mag_y" : 0, "lever1_x" : -0.375},	//REPLACE MAG
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25},	//REPLACE MAG
 					"step" : 10,
 					"sound" : {}
 				},
@@ -188,27 +198,27 @@
 		"inaccuracy" 		: 0, //Your random number generator
 		
 		//ammo bullet
-		"compatibleAmmo" 	: [ "GTA5RifleAmmo" ],
-		"projectileConfig" 	: {"speed" : 90, "power" :15},
-		"projectileType" 	: "GTA5RifleBullet",
+		"compatibleAmmo" 	: [ "GTA5PistolAmmo" ],
+		"projectileConfig" 	: {"speed" : 75, "power" : 20},
+		"projectileType" 	: "GTA5PistolBullet",
 		
 		//visual sfx
 		"muzzleEffect" 		: true,
 		"smokeEffect" 		: true,
 		"shellEffect" 		: true,
-		"fireOffset" 		: [2.25, 0.45],			//the projectile pos
-		"shellOffset" 		: [1.1, 0.3], 		//the falling shell init pos
+		"fireOffset" 		: [1.3, 0.65],			//the projectile pos
+		"shellOffset" 		: [0.625, 0.375], 		//the falling shell init pos
 		"gunSounds" 		: ["fire"], 		//Sounds from .animation
 		"magToHideTransform": "hidemag",	//For mags attachments
 		
 		//mechanics
-		"fireSpeed" 		: 0.07,			//atataatatatatata
+		"fireSpeed" 		: 0.45,			//atataatatatatata
 		"fireMode" 			: "auto", 		//auto, burst, semi
 		"burstAmount" 		: 5,
 		"burstCooldown" 	: 0.8,
 		"recoilPower" 		: 1,			//The higher, The more harder to control
 		"recoilRecovery" 	: 1, 		//Higher the slower
-		"magazineMax" 		: 30,
+		"magazineMax" 		: 16,
 		"magazineCurrent"	: 0,
 		"reloadCooldown" 	: 2,
 		

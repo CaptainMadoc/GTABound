@@ -1,15 +1,15 @@
 {
-	"itemName" : "CompactRifle",
+	"itemName" : "HeavyShotgun",
 	"price" : 0,
 	"maxStack" : 1,
 	"rarity" : "common",
-	"category" : "Assault Rifle",
+	"category" : "Auto Shotgun",
 	"description" : "",
-	"shortdescription" : "Compact Rifle",
+	"shortdescription" : "Heavy Shotgun",
 	"tooltipKind" : "base",
 	"twoHanded" : true,
 	
-	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5RifleAmmo/CompactRifle/icon.png",
+	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5ShotgunAmmo/HeavyShotgun/icon.png",
 	
 	"animation" : "gunsprite.animation",
 	"animationParts" : { },
@@ -188,27 +188,27 @@
 		"inaccuracy" 		: 0, //Your random number generator
 		
 		//ammo bullet
-		"compatibleAmmo" 	: [ "GTA5RifleAmmo" ],
-		"projectileConfig" 	: {"speed" : 90, "power" :15},
-		"projectileType" 	: "GTA5RifleBullet",
+		"compatibleAmmo" 	: ["GTA5ShotgunSlugAmmo", "GTA5ShotgunAmmo"],
+		"projectileConfig" 	: {"speed" : 90, "power" : 5},
+		"projectileType" 	: "GTA5ShotgunShell",
 		
 		//visual sfx
 		"muzzleEffect" 		: true,
 		"smokeEffect" 		: true,
 		"shellEffect" 		: true,
-		"fireOffset" 		: [2.25, 0.45],			//the projectile pos
-		"shellOffset" 		: [1.1, 0.3], 		//the falling shell init pos
+		"fireOffset" 		: [3, 0.425],			//the projectile pos
+		"shellOffset" 		: [0.2, 0.3], 		//the falling shell init pos
 		"gunSounds" 		: ["fire"], 		//Sounds from .animation
 		"magToHideTransform": "hidemag",	//For mags attachments
 		
 		//mechanics
-		"fireSpeed" 		: 0.07,			//atataatatatatata
+		"fireSpeed" 		: 0.375,			//atataatatatatata
 		"fireMode" 			: "auto", 		//auto, burst, semi
 		"burstAmount" 		: 5,
 		"burstCooldown" 	: 0.8,
 		"recoilPower" 		: 1,			//The higher, The more harder to control
 		"recoilRecovery" 	: 1, 		//Higher the slower
-		"magazineMax" 		: 30,
+		"magazineMax" 		: 8,
 		"magazineCurrent"	: 0,
 		"reloadCooldown" 	: 2,
 		

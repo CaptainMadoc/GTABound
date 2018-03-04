@@ -1,15 +1,15 @@
 {
-	"itemName" : "CompactRifle",
+	"itemName" : "CombatPDW",
 	"price" : 0,
 	"maxStack" : 1,
 	"rarity" : "common",
-	"category" : "Assault Rifle",
+	"category" : "Submachine Gun",
 	"description" : "",
-	"shortdescription" : "Compact Rifle",
+	"shortdescription" : "Combat PDW",
 	"tooltipKind" : "base",
 	"twoHanded" : true,
 	
-	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5RifleAmmo/CompactRifle/icon.png",
+	"inventoryIcon" : "/items/GTABound/sprite/guns/GTA5PistolAmmo/CombatPDW/icon.png",
 	
 	"animation" : "gunsprite.animation",
 	"animationParts" : { },
@@ -188,21 +188,21 @@
 		"inaccuracy" 		: 0, //Your random number generator
 		
 		//ammo bullet
-		"compatibleAmmo" 	: [ "GTA5RifleAmmo" ],
-		"projectileConfig" 	: {"speed" : 90, "power" :15},
-		"projectileType" 	: "GTA5RifleBullet",
+		"compatibleAmmo" 	: [ "GTA5PistolAmmo" ],
+		"projectileConfig" 	: {"speed" : 60, "power" : 7},
+		"projectileType" 	: "GTA5PistolBullet",
 		
 		//visual sfx
 		"muzzleEffect" 		: true,
 		"smokeEffect" 		: true,
 		"shellEffect" 		: true,
-		"fireOffset" 		: [2.25, 0.45],			//the projectile pos
-		"shellOffset" 		: [1.1, 0.3], 		//the falling shell init pos
+		"fireOffset" 		: [1.9, 0.55],			//the projectile pos
+		"shellOffset" 		: [1, 0.4], 		//the falling shell init pos
 		"gunSounds" 		: ["fire"], 		//Sounds from .animation
 		"magToHideTransform": "hidemag",	//For mags attachments
 		
 		//mechanics
-		"fireSpeed" 		: 0.07,			//atataatatatatata
+		"fireSpeed" 		: 0.11,			//atataatatatatata
 		"fireMode" 			: "auto", 		//auto, burst, semi
 		"burstAmount" 		: 5,
 		"burstCooldown" 	: 0.8,
