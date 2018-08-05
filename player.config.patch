@@ -1,0 +1,12 @@
+[
+    {
+        "path" : "/defaultBlueprints/tier1/-",
+        "op" : "add",
+        "value" : {"item" : "gtabgunpart"}
+    },
+    {
+        "path" : "/defaultBlueprints/tier1/-",
+        "op" : "add",
+        "value" : {"item" : "gtabammobox"}
+    }
+]

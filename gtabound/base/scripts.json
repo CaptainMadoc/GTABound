@@ -1,0 +1,18 @@
+[
+	"/gtabound/modules/weapon.lua",
+	"/gtabound/modules/attachment.lua",
+	"/gtabound/modules/magazine.lua",
+	"/gtabound/modules/camera.lua",
+	"/gtabound/modules/aim.lua",
+	
+	"/gtabound/modules/portraitprocessor.lua",
+	"/gtabound/modules/arms.lua",
+	"/gtabound/modules/transforms.lua",
+	"/gtabound/modules/animation.lua",
+	
+	"/gtabound/modules/portraitprocessor.lua",
+	"/gtabound/modules/flashlightmanager.lua",
+	"/gtabound/modules/lasermanager.lua",
+	"/gtabound/modules/uimanager.lua",
+	"/gtabound/modules/requireUni.lua"
+]
