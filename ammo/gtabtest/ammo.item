@@ -4,10 +4,10 @@
 	"rarity" : "common",
 	"maxStack" : 25000,
 	"category" : "craftingMaterial",
-	"inventoryIcon" : "gbtestammo.png",
+	"inventoryIcon" : "gtabtestammo.png",
 	"description" : "actually testing",
 	"shortdescription" : "test ammo",
 	"casingProjectile" : "gbtest_casing",
-	"projectile" : "gbtestproj",
+	"projectile" : "gtabtestproj",
 	"projectileConfig" : {"speed" : 5, "power" : 10000}
 }

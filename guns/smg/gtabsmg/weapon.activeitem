@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gtabassaultrifle",
-	"shortdescription" : "Assault Rifle",
+	"itemName" : "gtabsmg",
+	"shortdescription" : "SMG",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -22,7 +22,7 @@
 	"uiShell" : "ammo.png",
 
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gtabrifle.json",
+	"compatibleAmmo" : "/ammoGroup/gtabpistol.json",
 
 	"attachments" : {
 		"grip" : {
@@ -81,21 +81,21 @@
 	},
 	
 	"gunStats" : {
-		"damageMultiplier" : 2,
+		"damageMultiplier" : 1,
 
 		"maxMagazine" : 30,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
 		"recoil" : 2,
 		"recoilRecovery" : 16,
-		"movingInaccuracy" : 5,
-		"standingInaccuracy" : 1,
+		"movingInaccuracy" : 8,
+		"standingInaccuracy" : 3,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 700
+		"rpm" : 800
 	},
 
-	"fireSounds" : ["gtabassaultrifle.ogg"],
+	"fireSounds" : ["gtabsmg.ogg"],
 	"fireTypes" : ["auto", "semi"],
 	"gunPart" : "gun",
 
@@ -168,8 +168,8 @@
 						"attachment_grip_pos" : [2.875,0.875],
 						"attachment_grip_end" : [3,0.875],
 
-						"muzzle_begin" : [4.3, 1],
-						"muzzle_end" : [4.375, 1], 
+						"muzzle_begin" : [3.2, 1],
+						"muzzle_end" : [3.25, 1], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -178,7 +178,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [3, -0.5],
+						"offset" : [2.125, -0.375],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -329,7 +329,7 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbsmoke", "offset" : [2.25, 1.125]}
+					{ "particle" : "gbsmoke", "offset" : [1.75, 1]}
 				]
 			},
 			"vapor" : {
@@ -337,7 +337,7 @@
 				"emissionRate" : 128.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbvapor", "offset" : [4.3, 1]}
+					{ "particle" : "gbvapor", "offset" : [3.25, 0.875]}
 				]
 			},
 			"spark" : {
@@ -345,9 +345,9 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbspark1", "offset" : [4.25, 1]},
-					{ "particle" : "gbspark1", "offset" : [4.25, 1]},
-					{ "particle" : "gbspark1", "offset" : [4.25, 1]}
+					{ "particle" : "gbspark1", "offset" : [3.125, 0.75]},
+					{ "particle" : "gbspark1", "offset" : [3.125, 0.75]},
+					{ "particle" : "gbspark1", "offset" : [3.125, 0.75]}
 				]
 			}
 		},
@@ -384,7 +384,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.25, -0.50625]
+					"position" : [-1.125, -0.2875]
 				}
 			},
 			"lever" : {

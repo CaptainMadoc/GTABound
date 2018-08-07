@@ -1,7 +1,7 @@
 {
 	//UIinfo
-	"itemName" : "gtabassaultrifle",
-	"shortdescription" : "Assault Rifle",
+	"itemName" : "gtabmicrouzi",
+	"shortdescription" : "Micro Uzi",
 	"description" : "description here",
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -17,12 +17,12 @@
 	"rarity" : "common",
 	"maxStack" : 1,
 	"price" : 0,
-	"twoHanded" : true,
+	"twoHanded" : false,
 	
 	"uiShell" : "ammo.png",
 
 	"animationsKeyFrames" : "default.animation",
-	"compatibleAmmo" : "/ammoGroup/gtabrifle.json",
+	"compatibleAmmo" : "/ammoGroup/gtabpistol.json",
 
 	"attachments" : {
 		"grip" : {
@@ -81,27 +81,26 @@
 	},
 	
 	"gunStats" : {
-		"damageMultiplier" : 2,
+		"damageMultiplier" : 1,
 
-		"maxMagazine" : 30,
+		"maxMagazine" : 16,
 		"aimLookRatio" : 0.125,
 		"burst" : 3,
 		"recoil" : 2,
 		"recoilRecovery" : 16,
-		"movingInaccuracy" : 5,
-		"standingInaccuracy" : 1,
+		"movingInaccuracy" : 9,
+		"standingInaccuracy" : 3,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 700
+		"rpm" : 1500
 	},
 
-	"fireSounds" : ["gtabassaultrifle.ogg"],
-	"fireTypes" : ["auto", "semi"],
+	"fireSounds" : ["gtabmicrouzi.ogg"],
+	"fireTypes" : ["auto"],
 	"gunPart" : "gun",
 
 	"gunAnimations" : {
 		"shoot" : "shoot",
-		"cock" : "cock",
 		"dry" : "dry",
 		"reload" : "reload",
 		
@@ -154,7 +153,7 @@
 						"image" : "gun.png",
 						"offset" : [0.0, 0.0],
 
-						"casing_pos" : [2.25, 1.125],
+						"casing_pos" : [1.125, 1.25],
 
 						"attachment_muzzle_pos" : [4.125, 1],
 						"attachment_muzzle_end" : [4.25, 1], 
@@ -168,8 +167,8 @@
 						"attachment_grip_pos" : [2.875,0.875],
 						"attachment_grip_end" : [3,0.875],
 
-						"muzzle_begin" : [4.3, 1],
-						"muzzle_end" : [4.375, 1], 
+						"muzzle_begin" : [0.87, 1],
+						"muzzle_end" : [0.875, 1], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -178,7 +177,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [3, -0.5],
+						"offset" : [0.875, -0.5],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
@@ -329,7 +328,7 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbsmoke", "offset" : [2.25, 1.125]}
+					{ "particle" : "gbsmoke", "offset" : [0.625, 1.125]}
 				]
 			},
 			"vapor" : {
@@ -337,7 +336,7 @@
 				"emissionRate" : 128.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbvapor", "offset" : [4.3, 1]}
+					{ "particle" : "gbvapor", "offset" : [1.375, 0.875]}
 				]
 			},
 			"spark" : {
@@ -345,9 +344,9 @@
 				"emissionRate" : 32.0,
 				"zLevel" : 100,
 				"particles" : [
-					{ "particle" : "gbspark1", "offset" : [4.25, 1]},
-					{ "particle" : "gbspark1", "offset" : [4.25, 1]},
-					{ "particle" : "gbspark1", "offset" : [4.25, 1]}
+					{ "particle" : "gbspark1", "offset" : [1.3, 0.875]},
+					{ "particle" : "gbspark1", "offset" : [1.3, 0.875]},
+					{ "particle" : "gbspark1", "offset" : [1.3, 0.875]}
 				]
 			}
 		},
@@ -384,7 +383,7 @@
 				"interpolated" : false,
 				"transform" : {
 					"rotationPoint" : [1.5625, 0.8125],
-					"position" : [-1.25, -0.50625]
+					"position" : [-0.5, -0.2875]
 				}
 			},
 			"lever" : {
